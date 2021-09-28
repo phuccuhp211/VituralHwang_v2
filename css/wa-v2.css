@@ -1,0 +1,83 @@
+*{
+    font-family: 'Futura Hv BT';
+    font-style: normal;
+    font-weight: 900;
+    line-height: 178.87%;
+}
+
+body{
+    background: url(../data/bg_and_logo/noise.jpg);
+}
+
+.w-a-pd {
+    margin: 122px 0 0 0;
+}
+
+.title-all{
+    width: 100%;
+    color: white;
+    margin: 0 15px 0;
+}
+
+.h1-title {
+    font-size: 72px;
+}
+.h6-title {
+    margin: 26px 15px 0px 15px;
+    font-size: 24px;
+}
+
+.h2-title {
+    font-size: 48px;
+    margin: 0 15px 7px;
+}
+
+.h3-title {
+    font-size: 36px;
+}
+
+.pd-pic{width: 100%;}
+
+/*------------------------*/
+@media (max-width: 1600px) {
+.container-fluid.w-a-pd{width: 90%;}
+}
+
+@media (max-width: 1280px) {
+.container-fluid.w-a-pd{width: 85%;}
+}
+
+.fx-1{  transition: all ease 0.75s;}
+.fx-2{  transition: all ease 1.25s;}
+.fx-3{  transition: all ease 1.75s;}
+
+.fx-4{  transition: all ease 0.75s;}
+.fx-5{  transition: all ease 1.25s;}
+.fx-6{  transition: all ease 1.75s;}
+
+.fx-7{  transition: all ease 1s;}
+.fx-8{  transition: all ease 2s;}
+
+
+.effect{
+    position: relative;
+    overflow: hidden;
+    transform: translateX(-3000px);
+    opacity: 0;
+}
+.fx-on{
+    transform: translateX(0px) !important; 
+    opacity: 1 !important;
+}
+
+.w-a-pd-v2 .h6-title {font-size: 20px;margin: 2% 15px;}
+.w-a-pd-v3 .h6-title {font-size: 18px;margin: 2% 15px;}
+.w-a-pd-v2 .h1-title {font-size: 40px;margin: 5% 15px;}
+.w-a-pd-v3 .h1-title {font-size: 30px;margin: 5% 15px;}
+.w-a-pd-v2 .a-pages {margin: 0 15%;height: 50px;font-size: 20px;}
+.w-a-pd-v3 .a-pages {margin: 0 40px;font-size: 18px;}
+.w-a-pd-v2 .box-a-pages,.w-a-pd-v3 .box-a-pages {margin: 10% 0;}
+
+.main-vid {
+    background: black;
+}

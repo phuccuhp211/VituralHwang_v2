@@ -1,0 +1,150 @@
+*{
+    font-family: 'Futura Hv BT';
+    font-style: normal;
+    font-weight: 900;
+    line-height: 178.87%;
+}
+
+body{
+    background: url(../data/bg_and_logo/noise.jpg);
+}
+
+.effect{
+    position: relative;
+    overflow: hidden;
+    transform: translateX(-3000px);
+    opacity: 0;
+    margin: 0 0;
+}
+
+.fx-1{  transition: all ease 0.5s;}
+.fx-2{  transition: all ease 1s;}
+.fx-3{  transition: all ease 0.75s;}
+.fx-4{  transition: all ease 1.25s;}
+.fx-5{  transition: all ease 2s;}
+
+.fx-6{  transition: all ease 0.5s;}
+.fx-7{  transition: all ease 1s;}
+.fx-8{  transition: all ease 0.75s;}
+.fx-9{  transition: all ease 1.25s;}
+
+.fx-10{ transition: all ease 0.5s;}
+.fx-11{ transition: all ease 1s;}
+.fx-12{ transition: all ease 0.75s;}
+.fx-13{ transition: all ease 1.25s;}
+
+.fx-on{
+    transform: translateX(0px) !important; 
+    opacity: 1 !important;
+}
+
+.title-all{
+    width: 100%;
+    color: white;
+    margin: 0 15px 0;
+}
+
+.h1-title {
+    font-size: 72px;
+}
+
+.box-vid {
+    width: 100%;
+}
+
+.pd-pic {
+    width: 100%;
+    height: 402.08px;
+}
+
+.box-hide .pd-pic {height: 220px;}
+
+.box-pic {
+    overflow: hidden;
+}
+
+.long-hr {
+    width: 756px;
+    margin: 25px 15px 100px;
+    border-bottom: 1px solid white;
+}
+
+.h6-title {
+    margin: 26px 15px 0px 15px;
+    font-size: 24px;
+}
+
+.h2-title {
+    font-size: 48px;
+    margin: 0 15px 7px;
+}
+
+.h3-title {
+    font-size: 36px;
+}
+
+@media (max-width: 1600px) {
+.container-fluid.work-pd{width: 90%;}
+}
+
+@media (max-width: 1280px) {
+.container-fluid.work-pd{width: 85%;}
+}
+
+@media (width: 1600px) {
+.pd-pic{height: 326px;}
+}
+
+@media (max-width: 1400px) {
+.pd-pic{height: 220px;}
+}
+
+@media (max-width: 1279px) {
+.pd-pic{height: 160px;}
+}
+
+@media (max-width: 1279px) {
+.pd-pic{height: 160px;}
+}
+
+@media (max-width: 415px) {
+.pd-pic{height: 120px;}
+}
+
+@media (max-width: 380px) {
+.pd-pic{height: 100px;}
+}
+
+.work-pd {
+    margin: 122px 0 0 0;
+}
+
+/*--------------------------------------------*/
+.work-pd-v2 .h1-title {font-size: 40px;margin: 5% 15px;}
+.work-pd-v2 .h6-title {font-size: 20px;margin: 2% 15px;}
+.work-pd-v2 .h2-title {font-size: 36px;}
+.work-pd-v2 .h3-title {font-size: 32px;}
+
+.work-pd-v3 .h1-title {font-size: 30px;margin: 5% 15px;}
+.work-pd-v3 .h6-title {font-size: 18px;margin: 2% 15px;}
+.work-pd-v3 .h2-title {font-size: 27px;}
+.work-pd-v3 .h3-title {font-size: 24px;}
+
+.work-pd-v2 .a-pages {margin: 0 15%;height: 50px;font-size: 20px;}
+.work-pd-v3 .a-pages {margin: 0 40px;font-size: 18px;}
+
+.work-pd-v3 .box-a-pages {margin: 10% 0;}
+
+.work-pd-v2 .hr-center,.work-pd-v3 .hr-center {
+    width: 80%;
+    border-top: 2px solid white;
+    margin: 1% 15px 10%;
+}
+
+.d-tips {display: block;margin: 0 0 10px;color: white;font-size: 20px;text-align: center;}
+
+@media (max-width: 767px) {
+.d-tips {margin: 10px 0;}
+}
+
+.d-tips p {background: black;}

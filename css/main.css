@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: url(../fonts/FuturaHeavyBT.ttf);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 178.87%;
+}
+
+.a-menu {
+    position: relative;
+    color: white;
+    font-size: 24px;
+    display: block;
+    width: 200px;
+    height: 57px;
+    line-height: 57px;
+    letter-spacing: 1px;
+}
+
+.a-menu:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.a-menu:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.a-menu:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;z-index: -1;
+}
+
+.a-logo {
+    color: white;
+    margin: 72px 0px 0 67px;
+    position: relative;
+    display: block;
+    float: left;
+    height: 45px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.a-logo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.straight-line {
+    border: 3px solid white;
+    width: 173px;
+    height: 1px;
+    margin: 28px 0 44px;
+}
+
+.firts-box {
+    border-left: 2px solid white;
+    padding: 14px 20px;
+    margin: 43px 0 0 52px;
+    position: fixed;
+    height: 456PX;
+}
+
+.out-box-v2 .firts-box, .out-box-v3 .firts-box {
+    border: none;
+    padding: 10% 0 5%;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    background: black;
+    opacity: 0.8;
+}
+
+.ft-h6 {
+    color: white;
+    text-align: right;
+    padding: 0 80px 78px 0;
+    font-size: 24px;
+}
+
+.ft-h6.d-md-none.d-lg-none.d-sm-block.d-none, .ft-h6.d-md-none.d-lg-none.d-sm-none.d-block {
+    padding: 5% 0;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 61px;
+}
+
+.a-menu-k-1 {
+    position: absolute;
+    bottom: 50px;
+}
+
+.out-box .col-9 {
+    padding: 0 146px 0 15px;
+}
+
+.a-pages {font-size: 24px;margin: 0 80px;}
+
+.a-pages-none{color: gray !important;}
+
+.a-prev {color: white;}
+.a-prev:after {
+    content: "";
+    width: 83px;
+    height: 3px;
+    background: white;
+    max-width: 100px;
+    width: 0;
+    position: absolute;
+    left: 44%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    transition: 1s;
+}
+.a-prev:hover:after {width: 100%;transition: 1s;}
+.a-prev:hover {color: gray;text-decoration: none;}
+
+.a-next {color: white;}
+.a-next:after {
+    content: "";
+    width: 83px;
+    height: 3px;
+    background: white;
+    max-width: 100px;
+    width: 0;
+    position: absolute;
+    left: 57.25%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    transition: 1s;
+}
+.a-next:hover:after {width: 100%;transition: 1s;}
+.a-next:hover {color: white;text-decoration: none;}
+
+.box-a-pages {
+    margin: 23px 0 120px;
+}
+
+.work-pd-v2 .box-a-pages {
+    margin: 10% 0 5%;
+}
+
+.p-market {
+    color: white;
+    font-size: 24px;
+    margin: 81px 64px 0 0;
+    text-align: right;
+}
+
+.out-box {
+    position: absolute;
+    top: 0;
+    padding: 0 70px;
+    z-index: 1000;
+}
+
+.out-box-v2, .out-box-v3 {
+    background: #00000066;
+    position: fixed;
+    top: 0;
+    padding: 0px !important;
+}
+
+.box-dd-mn {
+    position: absolute;
+    text-align: center;
+    height: max-content;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all ease 1s;
+    transform: translateY(-500px);
+}
+
+.box-mn-show {
+    transform: translateY(0) !important;
+}
+.mn-main{padding: 0 20px;width: 100%}
+.hide-mn-main{opacity: 0;}
+
+.out-box-v2 .a-menu,.out-box-v3 .a-menu {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.button-dd-mn {
+    color: white;
+    background: none;
+    border: none;
+    float: right;
+    margin: 5% 0;
+}
+
+.button-hide-mn {
+    color: white;
+    background: none;
+    border: none;
+    margin: 5% 0;
+}
+
+.out-box-v2 .a-logo,.out-box-v3 .a-logo {
+    margin: 5% 0;
+    font-size: 24px;
+}
+
+
+.close-custom {
+    text-align: center;
+    color: white !important;
+    width: 40px;
+    height: 40px;
+    font-size: 24px !important;
+    line-height: 0px !important;
+    border: 2px solid white !important;
+    border-radius: 50%;
+    background: black !important;
+    position: absolute;
+    right: 0;
+    margin: 4%;
+    z-index: 100;
+    opacity: 0.7 !important;
+}
