@@ -1,0 +1,1 @@
+	<h6 class="ft-h6">Copyright © 2021 Vitural Hwang.</h6>

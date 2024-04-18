@@ -1,0 +1,58 @@
+.straight-line {
+    width: 15%;
+    border-bottom: 4px solid white;
+    margin: 2vh 0 6vh;
+}
+
+.h1-title {
+    margin: 0;
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+.contact {
+    color: white;
+}
+
+.box-contact {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+}
+
+.p-contact, .a-contact {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.icon-contact {
+    font-size: 40px;
+    margin: 0 15px 0 0;
+    width: 40px !important;
+}
+
+.cp-text {
+    border: none;
+    font-size: 20px;
+    margin: 0 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+}
+
+.cp-text:hover {
+    color: white;
+    box-shadow: inset 0px 40px black;
+}
+
+.cpt-rs {
+    opacity: 0;
+}
+
+.cpt-rs-off {
+    opacity: 1 !important;
+}

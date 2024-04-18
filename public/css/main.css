@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: url(../lib/fonts/FuturaHeavyBT.ttf);
+    font-style: normal;
+    line-height: 178.87%;
+}
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url(../lib/fonts/futuramediumbt.ttf);
+    font-style: normal;
+    line-height: 178.87%;
+}
+@font-face {
+    font-family: 'Futura Lt BT';
+    src: url(../lib/fonts/futuralightbt.ttf);
+    font-style: normal;
+    line-height: 178.87%;
+}
+@font-face {
+    font-family: 'Be Vietnam Pro Medium';
+    src: url(../lib/fonts/BeVietnamPro-Medium.ttf);
+    font-style: normal;
+    line-height: 178.87%;
+}
+
+body {
+    background: url(../data/bg_and_logo/noise.jpg);
+}
+
+* {
+    font-family: Futura Hv BT;
+    transition: all ease 0.5s;
+}
+
+.navbar {
+    padding: 0;
+    position: fixed;
+    top: 8vh;
+    left: 4vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar > .row {
+    margin: 0;
+}
+
+.a-menu:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.a-menu:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.a-menu {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 7px 0;
+    position: relative;
+    display: block;
+    width: 183px;
+}
+
+.a-menu-k-1 {
+    position: absolute;
+    bottom: 0;
+}
+
+.a-logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin: 0 0 5vh;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.p-market {
+    position: fixed;
+    top: 8vh;
+    right: 4vw;
+    margin: 0;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.ft-h6 {
+    text-align: right;
+    color: white;
+    font-size: 18px;
+    padding: 0 4vw 4vh 0;
+    display: block;
+}
+
+.firts-box {
+    border-left: 2px solid white;
+    padding: 0 0 0 15px;
+    height: 450px;
+    position: relative;
+}
+
+.content-box {
+    padding: 10vh 0 0;
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

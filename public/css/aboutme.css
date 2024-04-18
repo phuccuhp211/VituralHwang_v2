@@ -1,0 +1,33 @@
+.p-am {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0 0 30px;
+}
+
+.h4-sie {
+    color: white;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.row.sie > .col-12 > h4 {
+    width: fit-content;
+    padding: 0px 40px;
+}
+
+.col-12.position-relative {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30px;
+}
+
+ul {
+    color: white;
+    margin: 15px 0 40px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}

@@ -1,0 +1,23 @@
+.title-all {
+    margin: 0;
+}
+
+.h1-title {
+    font-size: 70px;
+}
+
+.vitural {
+    color: white;
+}
+
+.straight-line {
+    width: 10%;
+    border-bottom: 4px solid white;
+    margin: 3vh 0;
+}
+
+.p-vir-str {
+    margin: 30px 0;
+}
+
+.p-vir {letter-spacing: 1px;font-size: 17px;}
