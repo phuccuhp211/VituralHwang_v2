@@ -17,8 +17,9 @@ class ucontroller extends Controller
     }
 
     public function work() {
-        $data = $this->umodel->work_data();
-        return view('work',['data' => $data]);
+        $igT = $this->umodel->work_data_igT();
+        $igF = $this->umodel->work_data_igF();
+        return view('work',['igt' => $igT, 'igf' => $igF]);
     }
 
     public function archive(int $page = 0) {
