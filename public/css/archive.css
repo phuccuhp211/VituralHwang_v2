@@ -1,0 +1,48 @@
+.box-l {
+    width: 100%;
+    height: 83vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-l img:hover + .model-name {
+    opacity: 1;
+}
+
+.box-l iframe {
+    height: 100%;
+}
+
+.box-l img {
+    width: 100%;
+    scale: 1;
+}
+
+.box-s img {
+    width: -webkit-fill-available;
+    scale: 1.05;
+}
+
+.model-name {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto 2vh;
+    width: fit-content;
+    background: #00000085;
+    padding: 1vh 2vh;
+    color: white;
+    opacity: 0;
+}
+
+.box-s {width: 100%;height: 40vh;overflow: hidden;}
+
+.box-s iframe {
+    height: 100%;
+    background: black;
+}
+
+.box-l:hover, .box-s:hover {
+    box-shadow: 0 0 2px 2px white;
+}

@@ -22,9 +22,10 @@ class ucontroller extends Controller
         return view('work',['igt' => $igT, 'igf' => $igF]);
     }
 
-    public function archive(int $page = 0) {
-        if ($page != 0) echo $page;
-        else return view('archive');
+    public function archive() {
+        $igT = $this->umodel->arch_data_igT();
+        $igF = $this->umodel->arch_data_igF();
+        return view('archive',['igt' => $igT, 'igf' => $igF]);
     }
 
     public function vitural() {

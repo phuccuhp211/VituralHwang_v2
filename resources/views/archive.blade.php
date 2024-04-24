@@ -12,5 +12,56 @@
 @endsection
 
 @section('content')
-	<h1>day la content</h1>
+	<div class="container">
+        <div class="row"><h1 class="title-ss title-all">Archive<div class="straight-line"></div></h1></div>
+        
+        @foreach($igt as $value => $item)
+        <div class="row mb-5">
+            @if($value % 2 == 0) 
+            <div class="col-5">
+                <div class="box-l d-flex align-items-center">
+                    @if($item->model != "nan")
+                    <img class="model-img" src="{{$item->media_H[0]->origin}}">
+                    <p class="model-name">Model: {{$item->model}}</p>
+                    @else
+                    <iframe class="ratio" src="https://player.vimeo.com/video/621475308?h=1a75f752aa" allow="fullscreen; picture-in-picture" allowfullscreen title="timelapsebanner"></iframe>
+                    @endif
+                </div>
+            </div>
+            @endif
+            
+            <div class="col-7 d-flex flex-wrap align-content-between">
+                @foreach($item->media_V as $med)
+
+                @if($med->tom == "img")
+                <div class="col-12 box-s">
+                    <img class="model-img" src="{{$med->origin}}" alt="">
+                </div>
+                @endif
+
+                @if($med->tom == "vid")
+                <div class="col-12 box-s">
+                    <iframe class="ratio" src="{{$med->origin}}" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                @endif
+
+                @endforeach  
+            </div>
+
+            @if($value % 2 != 0) 
+            <div class="col-5">
+                <div class="box-l d-flex align-items-center">
+                    @if($item->model != "nan")
+                    <img class="model-img" src="{{$item->media_H[0]->origin}}">
+                    <p class="model-name">Model: {{$item->model}}</p>
+                    @else
+                    <iframe class="ratio" src="https://player.vimeo.com/video/621475308?h=1a75f752aa" allow="fullscreen; picture-in-picture" allowfullscreen title="timelapsebanner"></iframe>
+                    @endif
+                </div>
+            </div>
+            @endif
+        </div>
+        @endforeach
+        
+    </div>
 @endsection
