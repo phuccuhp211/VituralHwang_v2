@@ -44,5 +44,5 @@
 }
 
 .box-l:hover, .box-s:hover {
-    box-shadow: 0 0 2px 2px white;
+    box-shadow: 0 0 1px 2px white;
 }
