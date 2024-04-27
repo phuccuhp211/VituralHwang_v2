@@ -13,8 +13,33 @@
 
 @section('content')
 	<div class="container">
-        <div class="row"><h1 class="title-ss title-all">Archive<div class="straight-line"></div></h1></div>
+        <div class="row"><h1 class="title-ss title-all">Art Work<div class="straight-line"></div></h1></div>
+        <div class="row">
+            @foreach($igf1 as $value => $item)
+            <div class="art-vid">
+                <iframe class="ratio" src="{{$item->origin}}" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            @endforeach
+        </div>
+        <div class="straight-line my-4 mx-auto"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="view-box mb-3">
+                    <img src="" class="view-img" alt="">
+                    <img src="" class="view-img-sub" alt="">
+                </div>
+            </div>
+            <div class="arts-box">
+                @foreach($igf2 as $value => $item)
+                    <div class="box-ab">
+                        <img src="{{$item->origin}}" alt="">
+                    </div>
+                @endforeach
+            </div>
+                
+        </div>
         
+        <div class="row"><h1 class="title-ss title-all">Photograph<div class="straight-line"></div></h1></div>
         @foreach($igt as $value => $item)
         <div class="row mb-5">
             @if($value % 2 == 0) 

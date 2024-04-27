@@ -24,8 +24,13 @@ class ucontroller extends Controller
 
     public function archive() {
         $igT = $this->umodel->arch_data_igT();
-        $igF = $this->umodel->arch_data_igF();
-        return view('archive',['igt' => $igT, 'igf' => $igF]);
+        $igF1 = $this->umodel->arch_data_igF1();
+        $igF2 = $this->umodel->arch_data_igF2();
+        return view('archive',['igt' => $igT, 'igf1' => $igF1, 'igf2' => $igF2]);
+
+        /*echo "<br>";
+        var_dump($igF);
+        echo "</br>";*/
     }
 
     public function vitural() {

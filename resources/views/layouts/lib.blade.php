@@ -4,6 +4,7 @@
 	<link rel="shortcut icon" href="{{ asset('data/bg_and_logo/logo.web')}}"/>
 	
 	<script src="{{ asset('lib/js/jquery-3.6.3.js')}}"></script>
+	<script src="{{ asset('lib/js/player.js')}}"></script>
 	<script style="text/javascript" src="{{ asset('lib/js/popper.min.js')}}"></script>
 	<script style="text/javascript" src="{{ asset('lib/js/bootstrap532.min.js')}}"></script>
 

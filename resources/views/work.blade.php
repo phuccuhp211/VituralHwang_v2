@@ -17,11 +17,10 @@
         @foreach($igf as $value => $item)
         <div class="row">
             <h1 class="title-ss title-all">{{$item->name}}<div class="straight-line"></div></h1>
-            <div class="col-12 pd-box">
+            <div class="col-12">
                 <div style="padding:56.25% 0 0 0;position:relative;">
                     <iframe src="{{$item->media[0]->origin}}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Videograhper Showreel"></iframe>
                 </div>
-                <script src="https://player.vimeo.com/api/player.js%22%3E"></script>
             </div>
         </div>
 

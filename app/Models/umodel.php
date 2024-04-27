@@ -40,13 +40,18 @@ class umodel extends Model
         }
         return $prj;
     }
-    public function arch_data_igF() {
-        $prj = DB::table('arch')->where([['isgruop', '=', 1]])->orderBy('id','DESC')->get();
-        foreach ($prj as $value => $item) {
-            $item->media = DB::table('media')
-                ->where([['page', '=', 'arch'],['group', '=', $item->id]])
-                ->get();
-        }
+    public function arch_data_igF1() {
+        $prj = DB::table('media')
+            ->where([['group', '=', 0],['page', '=', 'arch'],['tom', '=', 'vid']])
+            ->orderBy('id','DESC')
+            ->get();
+        return $prj;
+    }
+    public function arch_data_igF2() {
+        $prj = DB::table('media')
+            ->where([['group', '=', 0],['page', '=', 'arch'],['tom', '=', 'img']])
+            ->orderBy('id','DESC')
+            ->get();
         return $prj;
     }
 }

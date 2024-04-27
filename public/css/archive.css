@@ -46,3 +46,78 @@
 .box-l:hover, .box-s:hover {
     box-shadow: 0 0 1px 2px white;
 }
+
+.art-vid {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.art-vid iframe {
+    height: 100%;
+    background: black;
+}
+
+.box-ab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.box-ab:hover {
+    box-shadow: 0 0 1px 2px white;
+}
+
+.box-ab:hover img {scale: 1.2;}
+
+.sl-view {
+    box-shadow: 0 0 1px 2px red !important;
+}
+
+.sl-view img {
+    scale: 1.4 !important;
+}
+
+.box-ab img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.arts-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arts-box {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.view-box {
+    height: 50vh;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.view-img {
+    height: 100%;
+}
+
+.view-img-sub {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    filter: blur(10px);
+}
