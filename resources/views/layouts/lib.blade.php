@@ -1,6 +1,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://apis.google.com https://www.googletagmanager.com https://www.google-analytics.com 'nonce-gg-pt'">
+	<meta http-equiv="Content-Security-Policy" content="
+		script-src 'self' 
+		https://apis.google.com 
+		https://www.googletagmanager.com 
+		https://www.google-analytics.com 
+		https://www.gstatic.com 
+		https://player.vimeo.com 
+		https://f.vimeocdn.com/ 
+		https://i.vimeocdn.com/ 
+		'nonce-gg-pt';
+	">
+
 	<link rel="shortcut icon" href="{{ asset('data/bg_and_logo/logo.web')}}"/>
 	
 	<script src="{{ asset('lib/js/jquery-3.6.3.js')}}"></script>

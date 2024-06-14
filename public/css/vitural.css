@@ -21,3 +21,27 @@
 }
 
 .p-vir {letter-spacing: 1px;font-size: 17px;}
+
+@media (max-width: 1600px) {
+    .h1-title { font-size: 70px; }
+}
+
+@media (max-width: 1440px) {
+    .h1-title { font-size: 64px; }
+    .straight-line { margin: 2.5vh; border-width: 3.5px; }
+}
+
+@media (max-width: 1360px) {
+    .h1-title { font-size: 58; }
+    .straight-line { margin: 2.5vh; border-width: 3px; }
+}
+
+@media (max-width: 1080px) {
+    .h1-title { font-size: 50px; }
+    .straight-line { margin: 1.75vh; border-width: 2.5px; }
+}
+
+@media (max-width: 880px) {
+    .h1-title { font-size: 40px; }
+    .straight-line { margin: 1vh; border-width: 2px; }
+}

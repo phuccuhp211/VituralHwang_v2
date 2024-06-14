@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class umodel extends Model
+class U_Model extends Model
 {
     use HasFactory;
 
-    public function work_data_igT() {
+    public static function work_data_igT() {
         $prj = DB::table('work')->where([['isgruop', '=', 0]])->orderBy('id','DESC')->get();
         foreach ($prj as $value => $item) {
             $item->media = DB::table('media')
@@ -19,7 +19,7 @@ class umodel extends Model
         }
         return $prj;
     }
-    public function work_data_igF() {
+    public static function work_data_igF() {
         $prj = DB::table('work')->where([['isgruop', '=', 1]])->orderBy('id','DESC')->get();
         foreach ($prj as $value => $item) {
             $item->media = DB::table('media')
@@ -28,7 +28,7 @@ class umodel extends Model
         }
         return $prj;
     }
-    public function arch_data_igT() {
+    public static function arch_data_igT() {
         $prj = DB::table('arch')->where([['isgruop', '=', 0]])->orderBy('id','DESC')->get();
         foreach ($prj as $value => $item) {
             $item->media_H = DB::table('media')
@@ -40,14 +40,14 @@ class umodel extends Model
         }
         return $prj;
     }
-    public function arch_data_igF1() {
+    public static function arch_data_igF1() {
         $prj = DB::table('media')
             ->where([['group', '=', 0],['page', '=', 'arch'],['tom', '=', 'vid']])
             ->orderBy('id','DESC')
             ->get();
         return $prj;
     }
-    public function arch_data_igF2() {
+    public static function arch_data_igF2() {
         $prj = DB::table('media')
             ->where([['group', '=', 0],['page', '=', 'arch'],['tom', '=', 'img']])
             ->orderBy('id','DESC')

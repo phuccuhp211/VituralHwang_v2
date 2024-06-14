@@ -1,3 +1,45 @@
 .vids-box:hover {
     box-shadow: 0 0 1px 2px white;
 }
+
+.vids-box {
+    height: 30vh;
+    background: black;
+    width: 100%;
+}
+
+.l-vids-box {
+    padding: 56.25% 0 0 0;
+    position: relative;
+    background: black;
+}
+
+@media (max-width: 1600px) {
+    .h1-title { font-size: 70px; }
+}
+
+@media (max-width: 1440px) {
+    .h1-title { font-size: 64px; }
+    .straight-line { margin: 2.5vh; border-width: 3.5px; }
+}
+
+@media (max-width: 1360px) {
+    .h1-title { font-size: 58; }
+    .straight-line { margin: 2.5vh; border-width: 3px; }
+    .vids-box { height: 25vh; }
+}
+
+@media (max-width: 1080px) {
+    .h1-title { font-size: 50px; }
+    .straight-line { margin: 1.75vh; border-width: 2.5px; }
+    .vids-box { height: 25vh; }
+}
+
+@media (max-width: 880px) and (orientation: portrait) {
+    .col-6.mb-3 { width: 100%; }
+    .vids-box { height: 17.5vh; };
+}
+
+@media (max-width: 880px) and (orientation: landscape) {
+    .vids-box { height: 25vh; }
+}

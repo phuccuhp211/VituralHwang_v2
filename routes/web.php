@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ucontroller;
+use App\Http\Controllers\U_Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +14,9 @@ use App\Http\Controllers\ucontroller;
 |
 */
 
-Route::get('/', [ucontroller::class, 'index']);
-Route::get('work', [ucontroller::class, 'work']);
-Route::get('works-archive', [ucontroller::class, 'archive']);
-Route::get('work/{page}', [ucontroller::class, 'work'])->where('page', '[0-9]+');
-Route::get('works-archive/{page}', [ucontroller::class, 'archive'])->where('page', '[0-9]+');
-Route::get('vituralight/', [ucontroller::class, 'vitural']);
-Route::get('about-me', [ucontroller::class, 'aboutme']);
-Route::get('contact', [ucontroller::class, 'contact']);
+Route::get('/', [U_Controller::class, 'index'])->name('user.home');
+Route::get('work', [U_Controller::class, 'work'])->name('user.works');
+Route::get('works-archive', [U_Controller::class, 'archive'])->name('user.archives');
+Route::get('vituralight', [U_Controller::class, 'vitural'])->name('user.vitural');
+Route::get('about-me', [U_Controller::class, 'aboutme'])->name('user.aboutme');
+Route::get('contact', [U_Controller::class, 'contact'])->name('user.contact');

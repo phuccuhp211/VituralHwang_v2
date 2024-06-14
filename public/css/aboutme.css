@@ -31,3 +31,29 @@ ul {
     letter-spacing: 1px;
     font-weight: 500;
 }
+
+@media (max-width: 1600px) {
+    
+}
+
+@media (max-width: 1440px) {
+    .p-am { margin: 0 0 25px }
+}
+
+@media (max-width: 1360px) {
+    .p-am { font-size: 18px; margin: 0 0 20px }
+    .col-12.position-relative { margin:20px 0 20px }
+}
+
+@media (max-width: 1080px) {
+    .p-am { font-size: 16px; margin: 0 0 15px }
+    .col-12.position-relative { margin:20px 0 15px }
+}
+
+@media (max-width: 880px) {
+    .p-am { font-size: 14px; margin: 0 0 10px }
+    .row.sie > .col-12 > h4 { padding: 0px 20px; }
+    ul {font-size: 12px;margin: 0px 0 10px;letter-spacing: 0px;padding-left: 14px;}
+    .h4-sie { font-size: 16px; letter-spacing: 0px; }
+    .col-12.position-relative { margin:20px 0 10px }
+}

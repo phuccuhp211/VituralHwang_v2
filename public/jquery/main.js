@@ -10,4 +10,9 @@ $(function() {
         $('.cpt-rs').addClass('cpt-rs-off');
         setTimeout(function () {$('.cpt-rs').removeClass('cpt-rs-off')}, 1000);
     })
+
+    $('.menu-bar').on('click', function() {
+        $('.firts-box').removeClass('goup');
+        setTimeout(function() { $('.firts-box').addClass('goup') }, 2000);
+    });
 })

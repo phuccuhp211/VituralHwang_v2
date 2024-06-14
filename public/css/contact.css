@@ -56,3 +56,41 @@
 .cpt-rs-off {
     opacity: 1 !important;
 }
+
+@media (max-width: 1600px) {
+    .h1-title { font-size: 56px; }
+    .straight-line { border-width: 3px; margin: 1.75vh 0 5vh; }
+    .p-contact, .a-contact { font-size: 18px; }
+    .icon-contact { font-size: 36px; }
+}
+
+@media (max-width: 1440px) {
+    .h1-title { font-size: 52px; }
+    .straight-line { border-width: 2.5px; margin: 1.5vh 0 4vh; }
+    .p-contact, .a-contact { font-size: 16px; }
+    .icon-contact { font-size: 32px; }
+}
+
+@media (max-width: 1360px) {
+    .h1-title { font-size: 46px; }
+    .straight-line { border-width: 2px; margin: 1.25vh 0 3vh; }
+    .content-box { padding-top: 16vh }
+    .icon-contact { font-size: 28px; margin-right: 10px; }
+    .cp-text { padding: 4px 13px ; font-size: 18px ; border-radius: 8pxp;}
+}
+
+@media (max-width: 1080px) {
+    .h1-title { font-size: 38px; }
+    .straight-line { border-width: 1.5px; margin: 1vh 0 2vh; }
+    .p-contact, .a-contact { font-size: 13px; }
+    .icon-contact { font-size: 24px; margin-right: 8px; }
+    .cp-text { padding: 3px 11px; font-size: 14px; border-radius: 6px;}
+}
+
+@media (max-width: 880px) {
+    .h1-title { font-size: 28px; }
+    .straight-line { border-width: 1px; margin: 0.75vh 0 1vh; }
+    .p-contact, .a-contact { font-size: 12px; }
+    .icon-contact { font-size: 20px; margin-right: 5px; }
+    .cp-text { padding: 2px 10px; font-size: 12px; border-radius: 5px;}
+}
