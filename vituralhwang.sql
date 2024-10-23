@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:4940
--- Generation Time: Oct 23, 2024 at 06:40 PM
+-- Generation Time: Oct 23, 2024 at 09:00 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -147,7 +147,8 @@ INSERT INTO `media` (`id`, `thumb`, `origin`, `group`, `type`, `tom`, `page`) VA
 (75, '', 'data/img/wa/art/theSlumHouse.png', 0, 1, 'img', 'arch'),
 (76, '', 'data/img/wa/art/yaibakusanagi.png', 0, 1, 'img', 'arch'),
 (77, '', 'data/img/wa/art/yaibakusanagi2.png', 0, 1, 'img', 'arch'),
-(78, '', 'data/video/project/TheSlum.mov', 12, 1, '', 'work');
+(78, '', 'data/video/project/TheSlum.mov', 12, 1, '', 'work'),
+(80, '', 'data/img/wa/art/yaibakusanagi3.png', 0, 1, 'img', 'arch');
 
 -- --------------------------------------------------------
 
@@ -329,7 +330,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT for table `migrations`
