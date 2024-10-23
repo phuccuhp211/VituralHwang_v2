@@ -56,7 +56,6 @@
                             + <strong>Robin Mahieux, Vicky Dang</strong> (Artist, Founder of Fromanother.love)<br>
                             + <strong>Ray Lavers</strong> (Cinematographer / Filmmaker)<br>
                             + <strong>Nguyen PB Huy</strong> (Media Producer, South East Entertainment)<br>
-                            + <strong>Arnld.xyz</strong> (Visual Artist, founder of Zoodio. works)<br>
                             + <strong>Vsoul</strong> (Artist, from Hustlang)<br>
                             + And other Arists, Directors.
                         </p> 
