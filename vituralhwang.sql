@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:4940
--- Generation Time: Jun 15, 2024 at 11:54 AM
+-- Generation Time: Oct 23, 2024 at 06:40 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -111,8 +111,7 @@ INSERT INTO `media` (`id`, `thumb`, `origin`, `group`, `type`, `tom`, `page`) VA
 (28, 'data/img/project/nmd2.png', 'data/video/project/nmd2.mp4', 9, 1, '', 'work'),
 (29, 'data/img/project/nmd3.png', 'data/video/project/nmd3.mp4', 9, 1, '', 'work'),
 (30, 'data/img/project/nmd4.png', 'data/video/project/nmd4.mp4', 9, 1, '', 'work'),
-(31, '', 'https://player.vimeo.com/video/744187892?h=454a5b3bdf', 10, 1, '', 'work'),
-(32, '', 'https://player.vimeo.com/video/812154181?h=59724c57e4', 11, 1, '', 'work'),
+(31, '', 'https://www.youtube.com/embed/ik10vDVZ81I', 10, 1, '', 'work'),
 (35, '', 'data/img/wa/D_1.jpg', 1, 1, 'img', 'arch'),
 (36, '', 'data/img/wa/D_2.jpg', 1, 2, 'img', 'arch'),
 (37, '', 'data/img/wa/D_3.jpg', 1, 2, 'img', 'arch'),
@@ -131,15 +130,24 @@ INSERT INTO `media` (`id`, `thumb`, `origin`, `group`, `type`, `tom`, `page`) VA
 (50, '', 'https://player.vimeo.com/video/762745806?h=e9f021cd5b', 0, 1, 'vid', 'arch'),
 (51, '', 'data/img/wa/art/poster.jpg', 0, 1, 'img', 'arch'),
 (52, '', 'data/img/wa/art/diamond.jpg', 0, 1, 'img', 'arch'),
-(53, '', 'data/img/wa/art/cloud.jpg', 0, 1, 'img', 'arch'),
 (54, '', 'data/img/wa/art/astro_font.jpg', 0, 1, 'img', 'arch'),
 (55, '', 'data/img/wa/art/F_2.jpg', 0, 1, 'img', 'arch'),
 (56, '', 'data/img/wa/art/F_3.jpg', 0, 1, 'img', 'arch'),
 (57, '', 'data/img/wa/art/F_4.jpg', 0, 1, 'img', 'arch'),
-(58, '', 'data/img/wa/art/abstract.jpg', 0, 1, 'img', 'arch'),
-(59, '', 'data/img/wa/art/nitendo.png', 0, 1, 'img', 'arch'),
-(60, '', 'data/img/wa/art/H_1.jpg', 0, 1, 'img', 'arch'),
-(61, '', 'data/img/wa/art/650S.jpg', 0, 1, 'img', 'arch');
+(61, '', 'data/img/wa/art/650S.jpg', 0, 1, 'img', 'arch'),
+(62, '', 'data/img/wa/art/Clock.png', 0, 1, 'img', 'arch'),
+(66, 'data/img/project/tsh2.png', '', 12, 1, '', 'work'),
+(68, 'data/img/project/hcl1.png', '', 11, 1, '', 'work'),
+(69, 'data/img/project/hcl2.png', '', 11, 1, '', 'work'),
+(70, '', 'data/img/wa/art/nmd1.png', 0, 1, 'img', 'arch'),
+(71, '', 'data/img/wa/art/nmd2.png', 0, 1, 'img', 'arch'),
+(72, '', 'data/img/wa/art/nmd3.png', 0, 1, 'img', 'arch'),
+(73, '', 'data/img/wa/art/nmd4.png', 0, 1, 'img', 'arch'),
+(74, '', 'data/img/wa/art/nmd5.png', 0, 1, 'img', 'arch'),
+(75, '', 'data/img/wa/art/theSlumHouse.png', 0, 1, 'img', 'arch'),
+(76, '', 'data/img/wa/art/yaibakusanagi.png', 0, 1, 'img', 'arch'),
+(77, '', 'data/img/wa/art/yaibakusanagi2.png', 0, 1, 'img', 'arch'),
+(78, '', 'data/video/project/TheSlum.mov', 12, 1, '', 'work');
 
 -- --------------------------------------------------------
 
@@ -223,25 +231,27 @@ CREATE TABLE `work` (
   `name` varchar(50) NOT NULL,
   `possition` varchar(25) NOT NULL,
   `date` varchar(10) NOT NULL,
-  `isgruop` int(11) NOT NULL
+  `isgruop` int(11) NOT NULL,
+  `islink` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `work`
 --
 
-INSERT INTO `work` (`id`, `name`, `possition`, `date`, `isgruop`) VALUES
-(1, 'Nostalgic', 'Director - Producer', '9/2019', 0),
-(2, 'Unreleased', 'Director - Producer', '9/2019', 0),
-(3, 'Savage', 'Director - Producer', '10/2019', 0),
-(4, 'Vietnamese', 'Director - Producer', '6/2020', 0),
-(5, 'Danger', 'Director - Producer', '9/2020', 0),
-(6, 'Khong Bao Gio Cach Xa - Redzy ft. LeeO - V.I.S.D', 'Director - Producer', '12/2020', 0),
-(7, 'Mood Swings - ThC', 'Director - Producer', '5/2021', 0),
-(8, 'Vay Da Du Xin Chua? - TFIVE Ft.Wtran', 'Director - Producer', '03/2022', 0),
-(9, 'I Ain\'t Need Your Luv No More - Ngoimotdong', 'Director - Producer', '2023', 0),
-(10, '3D Showreel', '', '', 1),
-(11, 'Videography Showreel', '', '', 1);
+INSERT INTO `work` (`id`, `name`, `possition`, `date`, `isgruop`, `islink`) VALUES
+(1, 'Nostalgic', 'Director - Producer', '9/2019', 0, ''),
+(2, 'Unreleased', 'Director - Producer', '9/2019', 0, ''),
+(3, 'Savage', 'Director - Producer', '10/2019', 0, ''),
+(4, 'Vietnamese', 'Director - Producer', '6/2020', 0, ''),
+(5, 'Danger', 'Director - Producer', '9/2020', 0, ''),
+(6, 'Khong Bao Gio Cach Xa - Redzy ft. LeeO - V.I.S.D', 'Director - Producer', '12/2020', 0, ''),
+(7, 'Mood Swings - ThC', 'Director - Producer', '5/2021', 0, ''),
+(8, 'Vay Da Du Xin Chua? - TFIVE Ft.Wtran', 'Director - Producer', '03/2022', 0, ''),
+(9, 'I Ain\'t Need Your Luv No More - Ngoimotdong', 'Director - Producer', '2023', 0, ''),
+(10, '', '', '', 1, ''),
+(11, 'Hon Cuu Long - Jombie x Bean', 'CG Generalist', '2023', 0, 'https://www.youtube.com/embed/GvpTZTw2jjg'),
+(12, 'The Slum Hours - Personal project', 'Enviroment Concept', '2024', 0, '');
 
 --
 -- Indexes for dumped tables
@@ -319,7 +329,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -343,7 +353,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `work`
 --
 ALTER TABLE `work`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
