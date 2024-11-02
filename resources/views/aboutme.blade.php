@@ -16,10 +16,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="p-am">My name is HOANG ANH KY (Vitural Hwang).<br>Visual Artist / Producer / Director</p>
-                    <p class="p-am">I make things that relate to "visual creative", more specifically "visual capture" and "visual crafting". Video & Photo-grapher (visual capture) & 3D, video editing (visual crafting).</p>
-                    <p class="p-am">Experienced music video producer, directing, 3D generalist. I’m spesialize in visual development, lookdev-lighting. A versatile and adaptable generalist, like a big light source, capable of illuminating a wide area, allowing for greater discovery and exploration in the production process.</p>
-
+                    <p class="p-am">My name is HOANG ANH KY (Vitural Hwang).<br>Multidisciplinary Creative</p>
+                    <p class="p-am">A multidisciplinary creative who specialize in visual development.</p>
+                    <p class="p-am">I am a multidisciplinary creative known for my strategic thinking, problem-solving, artistic, and perceptive approach to resource utilization. My journey across various creative and technical roles has equipped me with the adaptability, creativity, and problem-solving abilities needed to deliver exceptional results. Each step in my career reflects my commitment to leveraging available resources effectively, allowing me to achieve high-impact outcomes.</p>
                     <div class="row sie">
                         <div class="col-12 position-relative">
                             <hr class="border-2 my-0" style="border-color: white; width: 45%;">
