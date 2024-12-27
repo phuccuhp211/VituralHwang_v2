@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:4940
--- Generation Time: Oct 23, 2024 at 09:00 PM
+-- Generation Time: Dec 27, 2024 at 09:58 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -148,7 +148,9 @@ INSERT INTO `media` (`id`, `thumb`, `origin`, `group`, `type`, `tom`, `page`) VA
 (76, '', 'data/img/wa/art/yaibakusanagi.png', 0, 1, 'img', 'arch'),
 (77, '', 'data/img/wa/art/yaibakusanagi2.png', 0, 1, 'img', 'arch'),
 (78, '', 'data/video/project/TheSlum.mov', 12, 1, '', 'work'),
-(80, '', 'data/img/wa/art/yaibakusanagi3.png', 0, 1, 'img', 'arch');
+(80, '', 'data/img/wa/art/yaibakusanagi3.png', 0, 1, 'img', 'arch'),
+(81, 'data/img/project/mc-0.png', '', 13, 1, 'img', 'work'),
+(82, '', 'data/video/project/mc-0.mp4', 13, 1, 'vid', 'work');
 
 -- --------------------------------------------------------
 
@@ -232,7 +234,7 @@ CREATE TABLE `work` (
   `name` varchar(50) NOT NULL,
   `possition` varchar(25) NOT NULL,
   `date` varchar(10) NOT NULL,
-  `isgruop` int(11) NOT NULL,
+  `isgruop` int(11) NOT NULL DEFAULT 0,
   `islink` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -252,7 +254,8 @@ INSERT INTO `work` (`id`, `name`, `possition`, `date`, `isgruop`, `islink`) VALU
 (9, 'I Ain\'t Need Your Luv No More - Ngoimotdong', 'Director - Producer', '2023', 0, ''),
 (10, '', '', '', 1, ''),
 (11, 'Hon Cuu Long - Jombie x Bean', 'CG Generalist', '2023', 0, 'https://www.youtube.com/embed/GvpTZTw2jjg'),
-(12, 'The Slum Hours - Personal project', 'Enviroment Concept', '2024', 0, '');
+(12, 'The Slum Hours - Personal project', 'Enviroment Concept', '2024', 0, ''),
+(13, 'Tech Art - Personal Project', 'LookDev - Lighting', '2024', 0, '');
 
 --
 -- Indexes for dumped tables
@@ -330,7 +333,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -354,7 +357,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `work`
 --
 ALTER TABLE `work`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
