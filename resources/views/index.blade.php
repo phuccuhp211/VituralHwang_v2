@@ -12,7 +12,7 @@
 @endsection
 
 @section('content')
-	<video class="vid-bg" loop preload autoplay muted importance="high">
+	<video class="vid-bg" loop preload autoplay muted playsinline webkit-playsinline>
         <source src="{{ asset('data/bg_and_logo/vituralhwang_finnal_banner.mp4')}}" type="video/mp4"/>
     </video>
 @endsection

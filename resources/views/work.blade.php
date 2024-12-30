@@ -37,7 +37,7 @@
                     @foreach($item->media as $med)
                         <div class="col-6 mb-3">
                             @if ($med->type == 2 && $med->origin != '')
-                                <video class="vids-box" name="vid-play" loop controls>
+                                <video class="vids-box" name="vid-play" loop playsinline webkit-playsinline controls poster="{{$med->thumb}}">
                                     <source src="{{$med->origin}}" type="application/x-mpegURL"/>
                                 </video>
                             @elseif ($med->thumb != '' && $med->origin == '')
@@ -45,7 +45,7 @@
                                     <img class="img-thumb" src="{{$med->thumb}}">
                                 </div>
                             @else
-                                <video class="vids-box" name="vid-auto-play" muted preload="yes" loop poster="{{$med->thumb}}">
+                                <video class="vids-box" name="vid-auto-play" muted playsinline webkit-playsinline loop>
                                     <source src="{{$med->origin}}" type="application/x-mpegURL"/>
                                 </video>
                             @endif

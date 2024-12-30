@@ -19,9 +19,13 @@ function initializeHLSVideos(nameSelector) {
 
 		video.addEventListener('play', function() {
 			const currentTime = video.currentTime;
-			const buffer = hls.bufferInfo(video.currentTime, 0);
-			if (buffer.end - buffer.start < 10) {
-				hls.startLoad(currentTime);
+			if (hls.media && hls.media.buffered.length > 0) {
+				const bufferStart = hls.media.buffered.start(0);
+				const bufferEnd = hls.media.buffered.end(0);
+				
+				if (bufferEnd - bufferStart < 10) {
+					hls.startLoad(currentTime);
+				}
 			}
 		});
 
@@ -33,6 +37,15 @@ function initializeHLSVideos(nameSelector) {
 			video.addEventListener('mouseleave', function(event) {
 				event.preventDefault();
 				video.pause();
+			});
+
+			video.addEventListener('touchstart', function(event) {
+				if (video.paused) {
+					video.playsInline = true;
+					video.play();
+				} else {
+					video.pause();
+				}
 			});
 		}
 	}

@@ -177,9 +177,10 @@ body {
     padding: 0.5vh 2vh;
     font-size: 18px;
     background: #929292;
+    color: black;
 }
 
-.custom-button:hover, .custom-button:focus {
+.custom-button:hover {
     background: white;
 }
 
