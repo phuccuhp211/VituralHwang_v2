@@ -44,17 +44,31 @@ class U_Controller extends Controller
         return view('index', $this->data);
     }
 
-    public function work() {
-        $this->data['igt'] = U_Model::work_data_igT();
-        $this->data['igf'] = U_Model::work_data_igF();
-        return view('work', $this->data);
+    public function work(Request $request) {
+        if (!$request->ajax()) {
+            $this->data['igt'] = U_Model::work_data_igT();
+            $this->data['igf'] = U_Model::work_data_igF();
+            return view('work', $this->data);
+        }
+        else {
+            return response()->json(U_Model::work_data_igT($request->input('goPage')));
+        }
     }
 
-    public function archive() {
-        $this->data['igt'] = U_Model::arch_data_igT();
-        $this->data['igf1'] = U_Model::arch_data_igF1();
-        $this->data['igf2'] = U_Model::arch_data_igF2();
-        return view('archive', $this->data);
+    public function archive(Request $request) {
+        if (!$request->ajax()) {
+            $this->data['igt'] = U_Model::arch_data_igT();
+            $this->data['igf1'] = U_Model::arch_data_igF1();
+            $this->data['igf2'] = U_Model::arch_data_igF2();
+            return view('archive', $this->data);
+        }
+        else {
+            if ($request->input('type') == 'models') {
+                return response()->json(U_Model::arch_data_igT($request->input('goPage')));
+            } else {
+                return response()->json(U_Model::arch_data_igF2($request->input('goPage')));
+            }
+        }
     }
 
     public function vitural() {

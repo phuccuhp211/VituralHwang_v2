@@ -32,15 +32,6 @@
     background: black;
 }
 
-.title-all > a {
-    color: white;
-    text-decoration: none;
-}
-
-.title-all > a:hover {
-    color: #0d6efd;
-}
-
 @media (max-width: 1600px) {
     .h1-title { font-size: 70px; }
 }

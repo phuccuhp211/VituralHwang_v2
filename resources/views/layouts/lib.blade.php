@@ -1,4 +1,5 @@
 	<meta charset="UTF-8">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Security-Policy" content="
 		script-src 'self' 
@@ -9,13 +10,16 @@
 		https://player.vimeo.com 
 		https://f.vimeocdn.com/ 
 		https://i.vimeocdn.com/ 
-		'nonce-gg-pt';
+		'nonce-gg-pt'
+		blob:;
+		worker-src 'self' blob:;
 	">
 
 	<link rel="shortcut icon" href="{{ asset('data/bg_and_logo/logo.web')}}"/>
 	
-	<script src="{{ asset('lib/js/jquery-3.6.3.js')}}"></script>
-	<script src="{{ asset('lib/js/player.js')}}"></script>
+	<script style="text/javascript" src="{{ asset('lib/js/jquery-3.6.3.js')}}"></script>
+	<script style="text/javascript" src="{{ asset('lib/js/player.js')}}"></script>
+	<script style="text/javascript" src="{{ asset('lib/js/hls.js')}}"></script>
 	<script style="text/javascript" src="{{ asset('lib/js/popper.min.js')}}"></script>
 	<script style="text/javascript" src="{{ asset('lib/js/bootstrap532.min.js')}}"></script>
 
@@ -25,5 +29,5 @@
 
 	<link rel="stylesheet" href="{{ asset('lib/css/bootstrap.css')}}">
 	<link rel="stylesheet" href="{{ asset('/css/main.css')}}">
-	<script type="text/javascript" src="{{ asset('lib/js/all.js')}}"></script>
-	<script type="text/javascript" src="{{ asset('/jquery/main.js')}}"></script>
+	<script stype="text/javascript" src="{{ asset('lib/js/all.js')}}"></script>
+	<script stype="text/javascript" src="{{ asset('/jquery/main.js')}}"></script>

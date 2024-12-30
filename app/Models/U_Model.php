@@ -10,8 +10,13 @@ class U_Model extends Model
 {
     use HasFactory;
 
-    public static function work_data_igT() {
-        $prj = DB::table('work')->where([['isgruop', '=', 0]])->orderBy('id','DESC')->get();
+    public static function work_data_igT($page = 1) {
+        $prj = DB::table('work')
+            ->where([['isgruop', '=', 0]])
+            ->orderBy('id','DESC')
+            ->offset(($page*3)-3)
+            ->limit(3)
+            ->get();
         foreach ($prj as $value => $item) {
             $item->media = DB::table('media')
                 ->where([['page', '=', 'work'],['group', '=', $item->id]])
@@ -28,12 +33,17 @@ class U_Model extends Model
         }
         return $prj;
     }
-    public static function arch_data_igT() {
-        $prj = DB::table('arch')->where([['isgruop', '=', 0]])->orderBy('id','DESC')->get();
+    public static function arch_data_igT($page = 1) {
+        $prj = DB::table('arch')
+            ->where([['isgruop', '=', 0]])
+            ->orderBy('id','DESC')
+            ->offset(($page*3)-3)
+            ->limit(3)
+            ->get();
         foreach ($prj as $value => $item) {
             $item->media_H = DB::table('media')
                 ->where([['page', '=', 'arch'],['type', '=', 1],['group', '=', $item->id]])
-                ->get();
+                ->first();
             $item->media_V = DB::table('media')
                 ->where([['page', '=', 'arch'],['type', '=', 2],['group', '=', $item->id]])
                 ->get();
@@ -47,10 +57,12 @@ class U_Model extends Model
             ->get();
         return $prj;
     }
-    public static function arch_data_igF2() {
+    public static function arch_data_igF2($page = 1) {
         $prj = DB::table('media')
             ->where([['group', '=', 0],['page', '=', 'arch'],['tom', '=', 'img']])
             ->orderBy('id','DESC')
+            ->offset(($page*5)-5)
+            ->limit(5)
             ->get();
         return $prj;
     }

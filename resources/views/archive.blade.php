@@ -12,6 +12,10 @@
 @endsection
 
 @section('content')
+    <div class="alert-box alert-box-hide">
+        <h2>Wait a little bit...</h2>
+    </div>
+
     <div class="content-box archive">
         <div class="container">
             <div class="row"><h1 class="title-ss title-all">Art Work<div class="straight-line"></div></h1></div>
@@ -30,24 +34,24 @@
                         <img src="" class="view-img-sub" alt="">
                     </div>
                 </div>
-                <div class="arts-box">
+                <div class="arts-box mb-3">
                     @foreach($igf2 as $value => $item)
                         <div class="box-ab">
                             <img src="{{$item->origin}}" alt="">
                         </div>
                     @endforeach
                 </div>
-                    
+                <button class="custom-button" style="width: auto" data-type="galleries" data-step="2">See More</button>    
             </div>
             
             <div class="row mb-5"><h1 class="title-ss title-all">Photograph<div class="straight-line"></div></h1></div>
             @foreach($igt as $value => $item)
             <div class="row mb-5">
-                @if($value % 2 == 0) 
+                @if($item->id % 2 == 0) 
                 <div class="col-5 bl-l">
                     <div class="box-l d-flex align-items-center">
                         @if($item->model != "nan")
-                        <img class="model-img" src="{{$item->media_H[0]->origin}}">
+                        <img class="model-img" src="{{$item->media_H->origin}}">
                         <p class="model-name">Model: {{$item->model}}</p>
                         @else
                         <iframe class="ratio" src="https://player.vimeo.com/video/621475308?h=1a75f752aa" allow="fullscreen; picture-in-picture" allowfullscreen title="timelapsebanner"></iframe>
@@ -74,11 +78,11 @@
                     @endforeach  
                 </div>
 
-                @if($value % 2 != 0) 
+                @if($item->id % 2 != 0) 
                 <div class="col-5 bl-r">
                     <div class="box-l d-flex align-items-center">
                         @if($item->model != "nan")
-                        <img class="model-img" src="{{$item->media_H[0]->origin}}">
+                        <img class="model-img" src="{{$item->media_H->origin}}">
                         <p class="model-name">Model: {{$item->model}}</p>
                         @else
                         <iframe class="ratio" src="https://player.vimeo.com/video/621475308?h=1a75f752aa" allow="fullscreen; picture-in-picture" allowfullscreen title="timelapsebanner"></iframe>
@@ -88,6 +92,14 @@
                 @endif
             </div>
             @endforeach  
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <button class="custom-button" data-type="models" data-step="2">See More</button>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

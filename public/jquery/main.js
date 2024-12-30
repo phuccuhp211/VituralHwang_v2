@@ -1,4 +1,11 @@
 $(function() {
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+	$.ajaxSetup({
+	    headers: {
+	        'X-CSRF-TOKEN': csrfToken
+	    }
+	});
+
     $('.cp-text').on('click', function() {
         var cp = document.createRange();
         cp.selectNode(document.getElementById("gmail"));
