@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:4940
--- Generation Time: Dec 27, 2024 at 09:58 AM
+-- Generation Time: Dec 30, 2024 at 02:52 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -81,36 +81,36 @@ CREATE TABLE `media` (
 --
 
 INSERT INTO `media` (`id`, `thumb`, `origin`, `group`, `type`, `tom`, `page`) VALUES
-(1, 'data/img/project/nostalgic2.png', 'data/video/project/nostalgic2.mp4', 1, 1, '', 'work'),
-(2, 'data/img/project/nostalgic.png', 'data/video/project/nostalgic1.mp4', 1, 1, '', 'work'),
-(3, 'data/img/project/unrelese2.png', 'data/video/project/unrelse2.mp4', 2, 1, '', 'work'),
-(4, 'data/img/project/unrelese.png', 'data/video/project/unrelse.mp4', 2, 1, '', 'work'),
-(5, 'data/img/project/savage1.png', 'data/video/project/savage.mp4', 3, 1, '', 'work'),
-(6, 'data/img/project/savage2.png', 'data/video/project/savage2.mp4', 3, 1, '', 'work'),
-(7, 'data/img/project/savage3.png', 'data/video/project/savage3.mp4', 3, 1, '', 'work'),
-(8, 'data/img/project/savage4.png', 'data/video/project/savage4.mp4', 3, 1, '', 'work'),
-(9, 'data/img/project/viet1.png', 'data/video/project/viet.mp4', 4, 1, '', 'work'),
-(10, 'data/img/project/viet2.png', 'data/video/project/viet2.mp4', 4, 1, '', 'work'),
-(11, 'data/img/project/danger.png', 'data/video/project/danger.mp4', 5, 1, '', 'work'),
-(12, 'data/img/project/danger2.png', 'data/video/project/danger2.mp4', 5, 1, '', 'work'),
-(13, 'data/img/project/danger3.png', 'data/video/project/danger3.mp4', 5, 1, '', 'work'),
-(14, 'data/img/project/danger4.png', 'data/video/project/danger4.mp4', 5, 1, '', 'work'),
-(15, 'data/img/project/kbgcx.png', 'data/video/project/KBGCX1.mp4', 6, 1, '', 'work'),
-(16, 'data/img/project/kbgcx2.png', 'data/video/project/KBGCX2.mp4', 6, 1, '', 'work'),
-(17, 'data/img/project/kbgcx3.png', 'data/video/project/KBGCX3.mp4', 6, 1, '', 'work'),
-(18, 'data/img/project/kbgcx4.png', 'data/video/project/KBGCX4.mp4', 6, 1, '', 'work'),
-(19, 'data/img/project/moodswing.png', 'data/video/project/moodswing.mp4', 7, 1, '', 'work'),
-(20, 'data/img/project/moodswing2.png', 'data/video/project/moodswing2.mp4', 7, 1, '', 'work'),
-(21, 'data/img/project/moodswing3.png', 'data/video/project/moodswing3.mp4', 7, 1, '', 'work'),
-(22, 'data/img/project/moodswing4.png', 'data/video/project/moodswing4.mp4', 7, 1, '', 'work'),
-(23, 'data/img/project/bb-1.png', 'data/video/project/bb-1.mp4', 8, 1, '', 'work'),
-(24, 'data/img/project/bb-2.png', 'data/video/project/bb-2.mp4', 8, 1, '', 'work'),
-(25, 'data/img/project/bb-3.png', 'data/video/project/bb-3.mp4', 8, 1, '', 'work'),
-(26, 'data/img/project/bb-4.png', 'data/video/project/bb-4.mp4', 8, 1, '', 'work'),
-(27, 'data/img/project/nmd1.png', 'data/video/project/nmd1.mp4', 9, 1, '', 'work'),
-(28, 'data/img/project/nmd2.png', 'data/video/project/nmd2.mp4', 9, 1, '', 'work'),
-(29, 'data/img/project/nmd3.png', 'data/video/project/nmd3.mp4', 9, 1, '', 'work'),
-(30, 'data/img/project/nmd4.png', 'data/video/project/nmd4.mp4', 9, 1, '', 'work'),
+(1, 'data/img/project/nostalgic2.png', 'data/video/Nostalgic/1/output.m3u8', 1, 1, '', 'work'),
+(2, 'data/img/project/nostalgic.png', 'data/video/Nostalgic/2/output.m3u8', 1, 1, '', 'work'),
+(3, 'data/img/project/unrelese2.png', 'data/video/Unreleased/1/output.m3u8', 2, 1, '', 'work'),
+(4, 'data/img/project/unrelese.png', 'data/video/Unreleased/2/output.m3u8', 2, 1, '', 'work'),
+(5, 'data/img/project/savage1.png', 'data/video/Savage/1/output.m3u8', 3, 1, '', 'work'),
+(6, 'data/img/project/savage2.png', 'data/video/Savage/2/output.m3u8', 3, 1, '', 'work'),
+(7, 'data/img/project/savage3.png', 'data/video/Savage/3/output.m3u8', 3, 1, '', 'work'),
+(8, 'data/img/project/savage4.png', 'data/video/Savage/4/output.m3u8', 3, 1, '', 'work'),
+(9, 'data/img/project/viet1.png', 'data/video/Vietnamese/1/output.m3u8', 4, 1, '', 'work'),
+(10, 'data/img/project/viet2.png', 'data/video/Vietnamese/2/output.m3u8', 4, 1, '', 'work'),
+(11, 'data/img/project/danger.png', 'data/video/Danger/1/output.m3u8', 5, 1, '', 'work'),
+(12, 'data/img/project/danger2.png', 'data/video/Danger/2/output.m3u8', 5, 1, '', 'work'),
+(13, 'data/img/project/danger3.png', 'data/video/Danger/3/output.m3u8', 5, 1, '', 'work'),
+(14, 'data/img/project/danger4.png', 'data/video/Danger/4/output.m3u8', 5, 1, '', 'work'),
+(15, 'data/img/project/kbgcx.png', 'data/video/KhongBaoGioCachXa/1/output.m3u8', 6, 1, '', 'work'),
+(16, 'data/img/project/kbgcx2.png', 'data/video/KhongBaoGioCachXa/2/output.m3u8', 6, 1, '', 'work'),
+(17, 'data/img/project/kbgcx3.png', 'data/video/KhongBaoGioCachXa/3/output.m3u8', 6, 1, '', 'work'),
+(18, 'data/img/project/kbgcx4.png', 'data/video/KhongBaoGioCachXa/4/output.m3u8', 6, 1, '', 'work'),
+(19, 'data/img/project/moodswing.png', 'data/video/MoodSwing/1/output.m3u8', 7, 1, '', 'work'),
+(20, 'data/img/project/moodswing2.png', 'data/video/MoodSwing/2/output.m3u8', 7, 1, '', 'work'),
+(21, 'data/img/project/moodswing3.png', 'data/video/MoodSwing/3/output.m3u8', 7, 1, '', 'work'),
+(22, 'data/img/project/moodswing4.png', 'data/video/MoodSwing/4/output.m3u8', 7, 1, '', 'work'),
+(23, 'data/img/project/bb-1.png', 'data/video/VayDaDuXinChua/1/output.m3u8', 8, 1, '', 'work'),
+(24, 'data/img/project/bb-2.png', 'data/video/VayDaDuXinChua/2/output.m3u8', 8, 1, '', 'work'),
+(25, 'data/img/project/bb-3.png', 'data/video/VayDaDuXinChua/3/output.m3u8', 8, 1, '', 'work'),
+(26, 'data/img/project/bb-4.png', 'data/video/VayDaDuXinChua/4/output.m3u8', 8, 1, '', 'work'),
+(27, 'data/img/project/nmd1.png', 'data/video/IAinNeedYourLuvNoMore/1/output.m3u8', 9, 1, '', 'work'),
+(28, 'data/img/project/nmd2.png', 'data/video/IAinNeedYourLuvNoMore/2/output.m3u8', 9, 1, '', 'work'),
+(29, 'data/img/project/nmd3.png', 'data/video/IAinNeedYourLuvNoMore/3/output.m3u8', 9, 1, '', 'work'),
+(30, 'data/img/project/nmd4.png', 'data/video/IAinNeedYourLuvNoMore/4/output.m3u8', 9, 1, '', 'work'),
 (31, '', 'https://www.youtube.com/embed/ik10vDVZ81I', 10, 1, '', 'work'),
 (35, '', 'data/img/wa/D_1.jpg', 1, 1, 'img', 'arch'),
 (36, '', 'data/img/wa/D_2.jpg', 1, 2, 'img', 'arch'),
@@ -147,10 +147,10 @@ INSERT INTO `media` (`id`, `thumb`, `origin`, `group`, `type`, `tom`, `page`) VA
 (75, '', 'data/img/wa/art/theSlumHouse.png', 0, 1, 'img', 'arch'),
 (76, '', 'data/img/wa/art/yaibakusanagi.png', 0, 1, 'img', 'arch'),
 (77, '', 'data/img/wa/art/yaibakusanagi2.png', 0, 1, 'img', 'arch'),
-(78, '', 'data/video/project/TheSlum.mov', 12, 1, '', 'work'),
+(78, 'data/img/wa/art/theSlumHouse.png', 'data/video/TheSlum/1/output.m3u8', 12, 2, 'vid', 'work'),
 (80, '', 'data/img/wa/art/yaibakusanagi3.png', 0, 1, 'img', 'arch'),
 (81, 'data/img/project/mc-0.png', '', 13, 1, 'img', 'work'),
-(82, '', 'data/video/project/mc-0.mp4', 13, 1, 'vid', 'work');
+(82, 'data/img/project/mc-0.png', 'data/video/MasterComp/1/output.m3u8', 13, 2, 'vid', 'work');
 
 -- --------------------------------------------------------
 
