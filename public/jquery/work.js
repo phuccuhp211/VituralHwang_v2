@@ -1,3 +1,14 @@
+var isLoading = false;
+var existData = true;
+var pageNumber = 2;
+var totalHeight = getHeight();
+var viewHeight = $(window).height();      
+let debounceTimer;
+
+function getHeight() {
+	return document.documentElement.scrollHeight;
+}
+
 function initializeHLSVideos(nameSelector) {	
 	let videos = document.getElementsByName(nameSelector);
 	let autoPlay = (nameSelector == 'vid-auto-play') ? true : false;
@@ -102,43 +113,56 @@ function convertData(data) {
 	}
 }
 
+function handleScroll() {
+    let currentViewHeight = $('html, body').scrollTop();
+    if (totalHeight - (currentViewHeight + viewHeight) <= 200 && existData && !isLoading) loadMoreData();
+}
+
+function loadMoreData() {
+	isLoading = true;
+	$('.alert-box').removeClass('alert-box-hide');
+	$.ajax({
+		type: 'POST',
+		url: window.location.href,
+		data: { goPage: pageNumber },
+		dataType: 'JSON',
+		success: (data) => {
+			let html = convertData(data);
+			$('.content-box').find('.container').append(html.content);
+
+			totalHeight = getHeight();
+
+			initializeHLSVideos('vid-auto-play');
+			initializeHLSVideos('vid-play');
+
+			if (html.exist) existData = false;
+			else pageNumber += 1;
+			$('.alert-box').addClass('alert-box-hide')
+			isLoading = false;
+		},
+		error: function(jqXHR, textStatus, errorThrown) {
+			console.log('AJAX Error Details:');
+			console.log('Status:', textStatus);
+			console.log('Error Thrown:', errorThrown);
+			console.log('Response Text:', jqXHR.responseText);
+			console.log('Full jqXHR Object:', jqXHR);
+			$('.alert-box').addClass('alert-box-hide')
+			isLoading = false;
+		}
+	})
+}
+
 $(function() {
+	totalHeight = getHeight();
+	viewHeight = $(window).height();
+
+	$(window).scroll(function(){
+		clearTimeout(debounceTimer);
+    	debounceTimer = setTimeout(handleScroll, 250);
+	})
+
 	if (Hls.isSupported()) {
 		initializeHLSVideos('vid-auto-play');
 		initializeHLSVideos('vid-play');
 	}
-
-	$('.custom-button').on('click', function() {
-		$('.alert-box').removeClass('alert-box-hide');
-		let currentPage = $(this).data('step');
-		$.ajax({
-			type: 'POST',
-			url: window.location.href,
-			data: { goPage: currentPage },
-			dataType: 'JSON',
-			success: (data) => {
-				let html = convertData(data);
-				$('.content-box').find('.container').append(html.content);
-
-				initializeHLSVideos('vid-auto-play');
-				initializeHLSVideos('vid-play');
-
-				if (html.exist) $('.content-box').find('.container-fluid').remove();
-				else {
-					let nextPage = currentPage += 1;
-					$(this).data('step', nextPage);
-					$(this).attr('data-step', nextPage);
-				}
-				$('.alert-box').addClass('alert-box-hide')
-			},
-			error: function(jqXHR, textStatus, errorThrown) {
-				console.log('AJAX Error Details:');
-				console.log('Status:', textStatus);
-				console.log('Error Thrown:', errorThrown);
-				console.log('Response Text:', jqXHR.responseText);
-				console.log('Full jqXHR Object:', jqXHR);
-				$('.alert-box').addClass('alert-box-hide')
-			}
-		})
-	})
 })

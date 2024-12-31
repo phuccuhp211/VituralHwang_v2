@@ -62,13 +62,5 @@
                 </div>
             @endforeach
         </div>
-        
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <button class="custom-button" data-step="2">See More</button>
-                </div>
-            </div>
-        </div>
     </div>
 @endsection

@@ -1,3 +1,15 @@
+var isLoading = false;
+var existModelsData = true;
+var pageGalleriesNumber = 2;
+var pageModelsNumber = 2;
+var totalHeight = getHeight();
+var viewHeight = $(window).height();      
+let debounceTimer;
+
+function getHeight() {
+	return document.documentElement.scrollHeight;
+}
+
 function convertDataModels(data) {
 	let endContent = false;
 	let htmlContent = '';
@@ -77,6 +89,50 @@ function convertDataGallery(data) {
 	}
 }
 
+function handleScroll() {
+    let currentViewHeight = $('html, body').scrollTop();
+    if (totalHeight - (currentViewHeight + viewHeight) <= 200 && existModelsData && !isLoading) loadMoreData('models', pageModelsNumber);
+}
+
+function loadMoreData(typeOf, pageOf) {
+    isLoading = true;
+	$('.alert-box').removeClass('alert-box-hide');
+    $.ajax({
+        type: 'POST',
+        url: window.location.href,
+        data: { goPage: pageOf, type: typeOf },
+        dataType: 'JSON',
+        success: (data) => {
+            let html = (typeOf == 'models') ? convertDataModels(data) : convertDataGallery(data);
+
+            if (typeOf == 'models') {
+                $('.content-box').find('.container').append(html.content);
+                if (html.exist) existModelsData = false;
+                else pageModelsNumber += 1;
+            }
+
+            else if (typeOf == 'galleries') {
+                $('.arts-box').append(html.content);
+                viewImg(false);
+                if (html.exist) $('.arts-box').siblings('.custom-button').remove();
+                else pageGalleriesNumber += 1;
+            }
+            
+            $('.alert-box').addClass('alert-box-hide')
+            isLoading = false;
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log('AJAX Error Details:');
+            console.log('Status:', textStatus);
+            console.log('Error Thrown:', errorThrown);
+            console.log('Response Text:', jqXHR.responseText);
+            console.log('Full jqXHR Object:', jqXHR);
+            $('.alert-box').addClass('alert-box-hide')
+            isLoading = false;
+        }
+    })
+}
+
 function viewImg(fresh = true) {
     $('.box-ab').each(function() {
         if (fresh) $('.box-ab').first().addClass('sl-view');
@@ -94,51 +150,16 @@ function viewImg(fresh = true) {
 }
 
 $(function() {
+    totalHeight = getHeight();
+	viewHeight = $(window).height();
     viewImg();
 
+    $(window).scroll(function(){
+		clearTimeout(debounceTimer);
+    	debounceTimer = setTimeout(handleScroll, 250);
+	})
+
     $('.custom-button').on('click', function() {
-		$('.alert-box').removeClass('alert-box-hide');
-		let currentPage = $(this).data('step');
-        let typeMedia = $(this).data('type');
-		$.ajax({
-			type: 'POST',
-			url: window.location.href,
-			data: { goPage: currentPage, type: typeMedia },
-			dataType: 'JSON',
-			success: (data) => {
-                let html = (typeMedia == 'models') ? convertDataModels(data) : convertDataGallery(data);
-
-                if (typeMedia == 'models') {
-                    $('.content-box').find('.container').append(html.content);
-                    if (html.exist) $('.content-box').find('.container-fluid').remove();
-                    else {
-                        let nextPage = currentPage += 1;
-                        $(this).data('step', nextPage);
-                        $(this).attr('data-step', nextPage);
-                    }
-                }
-
-                else if (typeMedia == 'galleries') {
-                    $('.arts-box').append(html.content);
-                    viewImg(false);
-                    if (html.exist) $('.arts-box').siblings('.custom-button').remove();
-                    else {
-                        let nextPage = currentPage += 1;
-                        $(this).data('step', nextPage);
-                        $(this).attr('data-step', nextPage);
-                    }
-                }
-				
-				$('.alert-box').addClass('alert-box-hide')
-			},
-			error: function(jqXHR, textStatus, errorThrown) {
-				console.log('AJAX Error Details:');
-				console.log('Status:', textStatus);
-				console.log('Error Thrown:', errorThrown);
-				console.log('Response Text:', jqXHR.responseText);
-				console.log('Full jqXHR Object:', jqXHR);
-				$('.alert-box').addClass('alert-box-hide')
-			}
-		})
+        if (!isLoading) loadMoreData('galleries', pageGalleriesNumber);
 	})
 })

@@ -41,7 +41,7 @@
                         </div>
                     @endforeach
                 </div>
-                <button class="custom-button" style="width: auto" data-type="galleries" data-step="2">See More</button>    
+                <button class="custom-button" style="width: auto" data-step="2">See More</button>    
             </div>
             
             <div class="row mb-5"><h1 class="title-ss title-all">Photograph<div class="straight-line"></div></h1></div>
@@ -92,14 +92,6 @@
                 @endif
             </div>
             @endforeach  
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <button class="custom-button" data-type="models" data-step="2">See More</button>
-                </div>
-            </div>
         </div>
     </div>
 @endsection
