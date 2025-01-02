@@ -22,6 +22,31 @@
 
 .p-vir {letter-spacing: 1px;font-size: 17px;}
 
+.box-vid-embeded {
+    background: black;
+}
+
+.imgs-box {
+    overflow: hidden;
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs-box:hover .img-thumb {
+    scale: 1.1;
+}
+
+.imgs-box:hover {
+    box-shadow: 0 0 1px 2px white;
+}
+
+.img-thumb {
+    width: 100%;
+}
+
 @media (max-width: 1600px) {
     .h1-title { font-size: 70px; }
 }
