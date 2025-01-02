@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:4940
--- Generation Time: Dec 30, 2024 at 02:52 PM
+-- Generation Time: Jan 02, 2025 at 09:41 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -150,7 +150,14 @@ INSERT INTO `media` (`id`, `thumb`, `origin`, `group`, `type`, `tom`, `page`) VA
 (78, 'data/img/wa/art/theSlumHouse.png', 'data/video/TheSlum/1/output.m3u8', 12, 2, 'vid', 'work'),
 (80, '', 'data/img/wa/art/yaibakusanagi3.png', 0, 1, 'img', 'arch'),
 (81, 'data/img/project/mc-0.png', '', 13, 1, 'img', 'work'),
-(82, 'data/img/project/mc-0.png', 'data/video/MasterComp/1/output.m3u8', 13, 2, 'vid', 'work');
+(82, 'data/img/project/mc-0.png', 'data/video/MasterComp/1/output.m3u8', 13, 2, 'vid', 'work'),
+(83, '', 'data/img/vituralight/circuit3.png', 0, 1, 'img', 'arch'),
+(84, '', 'data/img/vituralight/circuit2.png', 0, 1, 'img', 'arch'),
+(85, '', 'data/img/vituralight/circuit1.png', 0, 1, 'img', 'arch'),
+(86, 'data/img/project/quantum-1.jpg', '', 14, 1, 'img', 'work'),
+(87, 'data/img/project/quantum-2.jpg', '', 14, 1, 'img', 'work'),
+(88, 'data/img/project/quantum-3.jpg', '', 14, 1, 'img', 'work'),
+(89, 'data/img/project/quantum-4.jpg', '', 14, 1, 'img', 'work');
 
 -- --------------------------------------------------------
 
@@ -255,7 +262,8 @@ INSERT INTO `work` (`id`, `name`, `possition`, `date`, `isgruop`, `islink`) VALU
 (10, '', '', '', 1, ''),
 (11, 'Hon Cuu Long - Jombie x Bean', 'CG Generalist', '2023', 0, 'https://www.youtube.com/embed/GvpTZTw2jjg'),
 (12, 'The Slum Hours - Personal project', 'Enviroment Concept', '2024', 0, ''),
-(13, 'Tech Art - Personal Project', 'LookDev - Lighting', '2024', 0, '');
+(13, 'Tech Art - Personal Project', 'LookDev - Lighting', '2024', 0, ''),
+(14, 'A_02 Quantum - Personal Project', 'LookDev - Lighting', '2025', 0, '');
 
 --
 -- Indexes for dumped tables
@@ -333,7 +341,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -357,7 +365,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `work`
 --
 ALTER TABLE `work`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
