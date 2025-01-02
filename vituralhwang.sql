@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:4940
--- Generation Time: Jan 02, 2025 at 09:41 PM
+-- Generation Time: Jan 02, 2025 at 10:01 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -157,7 +157,13 @@ INSERT INTO `media` (`id`, `thumb`, `origin`, `group`, `type`, `tom`, `page`) VA
 (86, 'data/img/project/quantum-1.jpg', '', 14, 1, 'img', 'work'),
 (87, 'data/img/project/quantum-2.jpg', '', 14, 1, 'img', 'work'),
 (88, 'data/img/project/quantum-3.jpg', '', 14, 1, 'img', 'work'),
-(89, 'data/img/project/quantum-4.jpg', '', 14, 1, 'img', 'work');
+(89, 'data/img/project/quantum-4.jpg', '', 14, 1, 'img', 'work'),
+(90, '', 'data/img/project/mc-0.png', 0, 1, 'img', 'arch'),
+(91, '', 'data/img/project/quantum-1.jpg', 0, 1, 'img', 'arch'),
+(92, '', 'data/img/project/quantum-2.jpg', 0, 1, 'img', 'arch'),
+(93, '', 'data/img/project/quantum-3.jpg', 0, 1, 'img', 'arch'),
+(94, '', 'data/img/project/quantum-4.jpg', 0, 1, 'img', 'arch'),
+(95, '', 'data/img/project/quantum-5.jpg', 0, 1, 'img', 'arch');
 
 -- --------------------------------------------------------
 
@@ -341,7 +347,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -365,7 +371,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `work`
 --
 ALTER TABLE `work`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
