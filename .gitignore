@@ -17,5 +17,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-/ORIGINVIDEO
+/ORIGIN_VIDEOS
+/ORIGIN_IMGS
 htdocs2.zip

@@ -30,14 +30,14 @@
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="view-box mb-3">
-                        <img src="" class="view-img" alt="">
-                        <img src="" class="view-img-sub" alt="">
+                        <img src="" class="view-img" alt="" loading="lazy">
+                        <img src="" class="view-img-sub" alt="" loading="lazy">
                     </div>
                 </div>
                 <div class="arts-box mb-3">
                     @foreach($igf2 as $value => $item)
                         <div class="box-ab">
-                            <img src="{{$item->origin}}" alt="">
+                            <img src="{{$item->origin}}" alt="" loading="lazy">
                         </div>
                     @endforeach
                 </div>
@@ -51,7 +51,7 @@
                 <div class="col-5 bl-l">
                     <div class="box-l d-flex align-items-center">
                         @if($item->model != "nan")
-                        <img class="model-img" src="{{$item->media_H->origin}}">
+                        <img class="model-img" src="{{$item->media_H->origin}}" loading="lazy">
                         <p class="model-name">Model: {{$item->model}}</p>
                         @else
                         <iframe class="ratio" src="https://player.vimeo.com/video/621475308?h=1a75f752aa" allow="fullscreen; picture-in-picture" allowfullscreen title="timelapsebanner"></iframe>
@@ -82,7 +82,7 @@
                 <div class="col-5 bl-r">
                     <div class="box-l d-flex align-items-center">
                         @if($item->model != "nan")
-                        <img class="model-img" src="{{$item->media_H->origin}}">
+                        <img class="model-img" src="{{$item->media_H->origin}}" loading="lazy">
                         <p class="model-name">Model: {{$item->model}}</p>
                         @else
                         <iframe class="ratio" src="https://player.vimeo.com/video/621475308?h=1a75f752aa" allow="fullscreen; picture-in-picture" allowfullscreen title="timelapsebanner"></iframe>

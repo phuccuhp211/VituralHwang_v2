@@ -82,13 +82,13 @@
                     <div id="mobile-carousel" class="carousel slide d-sm-block d-xl-none d-lg-none d-md-none" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ asset('data/img/vituralight/circuit1.png') }}" class="d-block w-100" alt="Circuit 1">
+                                <img src="{{ asset('data/img/vituralight/circuit1.png') }}" loading="lazy" class="d-block w-100" alt="Circuit 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ asset('data/img/vituralight/circuit2.png') }}" class="d-block w-100" alt="Circuit 2">
+                                <img src="{{ asset('data/img/vituralight/circuit2.png') }}" loading="lazy" class="d-block w-100" alt="Circuit 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ asset('data/img/vituralight/circuit3.png') }}" class="d-block w-100" alt="Circuit 3">
+                                <img src="{{ asset('data/img/vituralight/circuit3.png') }}" loading="lazy" class="d-block w-100" alt="Circuit 3">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#mobile-carousel" data-bs-slide="prev">
@@ -105,17 +105,17 @@
                         <div class="row">
                             <div class="col-4">
                                 <div class="imgs-box">
-                                    <img src="{{ asset('data/img/vituralight/circuit1.png') }}" alt="Circuit 1" class="img-thumb">
+                                    <img src="{{ asset('data/img/vituralight/circuit1.png') }}" loading="lazy" alt="Circuit 1" class="img-thumb">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="imgs-box">
-                                    <img src="{{ asset('data/img/vituralight/circuit2.png') }}" alt="Circuit 2" class="img-thumb">
+                                    <img src="{{ asset('data/img/vituralight/circuit2.png') }}" loading="lazy" alt="Circuit 2" class="img-thumb">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="imgs-box">
-                                    <img src="{{ asset('data/img/vituralight/circuit3.png') }}" alt="Circuit 3" class="img-thumb">
+                                    <img src="{{ asset('data/img/vituralight/circuit3.png') }}" loading="lazy" alt="Circuit 3" class="img-thumb">
                                 </div>
                             </div>
                         </div>

@@ -42,7 +42,7 @@
                                 </video>
                             @elseif ($med->thumb != '' && $med->origin == '')
                                 <div class="imgs-box">
-                                    <img class="img-thumb" src="{{$med->thumb}}">
+                                    <img class="img-thumb" src="{{$med->thumb}}" loading="lazy">
                                 </div>
                             @else
                                 <video class="vids-box" name="vid-auto-play" muted playsinline webkit-playsinline loop>
