@@ -80,7 +80,7 @@ function convertData(data) {
 			else if (currentMedia.thumb != '' && currentMedia.origin == '') mediaContent += `
 				<div class="col-6 mb-3">
 					<div class="imgs-box">
-						<img class="img-thumb" src="${currentMedia.thumb}">
+						<img class="img-thumb" src="${currentMedia.thumb}" loading="lazy">
 					</div>
 				</div>`;
 			

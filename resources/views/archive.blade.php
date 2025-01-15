@@ -30,14 +30,14 @@
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="view-box mb-3">
-                        <img src="" class="view-img" alt="" loading="lazy">
-                        <img src="" class="view-img-sub" alt="" loading="lazy">
+                        <img src="" class="view-img" loading="lazy">
+                        <img src="" class="view-img-sub" loading="lazy">
                     </div>
                 </div>
                 <div class="arts-box mb-3">
                     @foreach($igf2 as $value => $item)
                         <div class="box-ab">
-                            <img src="{{$item->origin}}" alt="" loading="lazy">
+                            <img src="{{$item->origin}}" loading="lazy">
                         </div>
                     @endforeach
                 </div>

@@ -82,13 +82,13 @@
                     <div id="mobile-carousel" class="carousel slide d-sm-block d-xl-none d-lg-none d-md-none" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ asset('data/img/vituralight/circuit1.png') }}" loading="lazy" class="d-block w-100" alt="Circuit 1">
+                                <img src="{{ asset('data/img/vituralight/circuit1.webp') }}" loading="lazy" class="d-block w-100" alt="Circuit 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ asset('data/img/vituralight/circuit2.png') }}" loading="lazy" class="d-block w-100" alt="Circuit 2">
+                                <img src="{{ asset('data/img/vituralight/circuit2.webp') }}" loading="lazy" class="d-block w-100" alt="Circuit 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ asset('data/img/vituralight/circuit3.png') }}" loading="lazy" class="d-block w-100" alt="Circuit 3">
+                                <img src="{{ asset('data/img/vituralight/circuit3.webp') }}" loading="lazy" class="d-block w-100" alt="Circuit 3">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#mobile-carousel" data-bs-slide="prev">
@@ -105,24 +105,24 @@
                         <div class="row">
                             <div class="col-4">
                                 <div class="imgs-box">
-                                    <img src="{{ asset('data/img/vituralight/circuit1.png') }}" loading="lazy" alt="Circuit 1" class="img-thumb">
+                                    <img src="{{ asset('data/img/vituralight/circuit1.webp') }}" loading="lazy" alt="Circuit 1" class="img-thumb">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="imgs-box">
-                                    <img src="{{ asset('data/img/vituralight/circuit2.png') }}" loading="lazy" alt="Circuit 2" class="img-thumb">
+                                    <img src="{{ asset('data/img/vituralight/circuit2.webp') }}" loading="lazy" alt="Circuit 2" class="img-thumb">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="imgs-box">
-                                    <img src="{{ asset('data/img/vituralight/circuit3.png') }}" loading="lazy" alt="Circuit 3" class="img-thumb">
+                                    <img src="{{ asset('data/img/vituralight/circuit3.webp') }}" loading="lazy" alt="Circuit 3" class="img-thumb">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12" style="margin: 50px 0 0;">
+                <div class="col-12" style="margin: 50px 0;">
                     <div class="col-12 box-vid-embeded">
                         <div style="padding:56.25% 0 0 0;position:relative;">
                             <iframe src="https://player.vimeo.com/video/1042582675?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="E2-E4 2021 Demo"></iframe>

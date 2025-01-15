@@ -21,7 +21,7 @@ function convertDataModels(data) {
 		model.media_V.forEach(currentMedia => {
 			if (currentMedia.tom == 'img') verticalMedia += `
 				<div class="col-12 box-s">
-                    <img class="model-img" src="${currentMedia.origin}" alt="">
+                    <img class="model-img" src="${currentMedia.origin}" loading="lazy">
                 </div>`;
 			else if (currentMedia.tom == 'vid') verticalMedia += `
 				<div class="col-12 box-s">
@@ -36,7 +36,7 @@ function convertDataModels(data) {
         if (model.model != 'nan') modelImg = `
             <div class="col-5 bl-l">
                 <div class="box-l d-flex align-items-center">
-                    <img class="model-img" src="${model.media_H.origin}">
+                    <img class="model-img" src="${model.media_H.origin}" loading="lazy">
                     <p class="model-name">Model: ${model.model}</p>
                 </div>
             </div>
@@ -78,7 +78,7 @@ function convertDataGallery(data) {
         if (img.id == 51) endContent = true;
 		htmlContent += `
 			<div class="box-ab">
-                <img src="${img.origin}" alt="">
+                <img src="${img.origin}" loading="lazy">
             </div>
 		`;
 	});
